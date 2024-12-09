@@ -1,0 +1,7 @@
+<p>notification works!</p>
+<p> items: {{ messages.length }} </p>
+<ul>
+  @for (message of messages; track message) {
+  <li>New Notification: {{ message.data | json }}</li>
+  }
+</ul>
